@@ -3,6 +3,10 @@
 use PHPUnit\Framework\TestCase;
 require_once 'Complex.php';
 
+
+/**
+ * Run all tests: ./vendor/bin/phpunit tests
+ */
 final class ComplexTest extends TestCase
 {    
     /**
@@ -33,7 +37,12 @@ final class ComplexTest extends TestCase
         $this->expectOutputString($expected);
         echo(Complex::sum($c1, $c2));
     }
-
+    
+    /**
+     * Набор данных для суммирования.
+     *
+     * @return void
+     */
     public function additionProvider()
     {
         return [
