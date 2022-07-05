@@ -1,5 +1,4 @@
-# MacOS system files
 .DS_Store
-
-# system
+/.idea
 /vendor
+.phpunit.result.cache
